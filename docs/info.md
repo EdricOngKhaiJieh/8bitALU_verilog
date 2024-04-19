@@ -15,7 +15,8 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How to test
 <img width="857" alt="image" src="https://github.com/EdricOngKhaiJieh/8bitALU_verilog/assets/80259537/a49bbcc7-b4ae-4c16-9147-324e2b67e3c3">
-<img width="859" alt="image" src="https://github.com/EdricOngKhaiJieh/8bitALU_verilog/assets/80259537/d0db68e4-98ef-4404-b7c8-51eddfa50257">
+<img width="859" alt="image" src="https://github.com/EdricOngKhaiJieh/8bitALU_verilog/assets/80259537/601c812a-4820-44cb-8e97-a1b2c9cc2b98">
+
 
 
 
