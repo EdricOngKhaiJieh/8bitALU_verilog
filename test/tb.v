@@ -45,6 +45,7 @@ module tb ();
 // endmodule
     reg clk;
     reg rst; 
+    reg ena;
     reg IN0;
     reg IN1; 
     reg IN2; 
@@ -66,6 +67,7 @@ module tb ();
 tt_um_8bitALU user_project(
 .clk(clk),
 .rst(rst),
+.ena(ena),
 .IN0(IN0),
 .IN1(IN1), 
 .IN2(IN2), 
