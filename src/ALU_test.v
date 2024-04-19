@@ -13,7 +13,48 @@ module tt_um_8bitALU (
 reg [7:0] memory3 ; 
 
   
- always @(posedge clk) 
+//  always @(posedge clk) 
+//   begin
+//     if (rst_n) begin
+//     // Reset memory to default values
+//     memory3 <= 8'd0;
+//   end
+//     else if (ena) begin
+//     if(ui_in[7] == 0 && ui_in[6] == 0 )
+//         begin
+
+//               memory3 <= (ui_in[2:0] + ui_in[5:3]);            
+//         end
+        
+//     if(ui_in[7] == 0 && ui_in[6] == 1)
+//         begin
+
+//               memory3 <= (ui_in[2:0] - ui_in[5:3]);  
+//         end
+        
+//     if(ui_in[7] == 1 && ui_in[6] == 0 )
+//         begin
+
+//               memory3 <= (ui_in[2:0] * ui_in[5:3]);  
+//         end
+        
+//     if(ui_in[7] == 1 && ui_in[6] == 1)
+//         begin
+
+//               memory3 <= (ui_in[2:0] / ui_in[5:3]);  
+//         end
+        
+
+
+//     end
+// end
+
+
+//   assign uo_out  = memory3 ; 
+//   assign uio_out = 0;
+//   assign uio_oe  = 0;
+// endmodule 
+always @(posedge clk) 
   begin
     if (rst_n) begin
     // Reset memory to default values
@@ -23,25 +64,24 @@ reg [7:0] memory3 ;
     if(ui_in[7] == 0 && ui_in[6] == 0 )
         begin
 
-              memory3 <= (ui_in[2:0] + ui_in[5:3]);            
+              memory3 <= ({5'b0,ui_in[2:0]} + {5'b0,ui_in[5:3]});            
         end
         
     if(ui_in[7] == 0 && ui_in[6] == 1)
         begin
 
-              memory3 <= (ui_in[2:0] - ui_in[5:3]);  
+              memory3 <= ({5'b0,ui_in[2:0]} - {5'b0,ui_in[5:3]});
         end
-        
     if(ui_in[7] == 1 && ui_in[6] == 0 )
         begin
 
-              memory3 <= (ui_in[2:0] * ui_in[5:3]);  
+              memory3 <= ({5'b0,ui_in[2:0]} * {5'b0,ui_in[5:3]}); 
         end
         
     if(ui_in[7] == 1 && ui_in[6] == 1)
         begin
 
-              memory3 <= (ui_in[2:0] / ui_in[5:3]);  
+              memory3 <= ({5'b0,ui_in[2:0]} / {5'b0,ui_in[5:3]});
         end
         
 
@@ -53,5 +93,4 @@ end
   assign uo_out  = memory3 ; 
   assign uio_out = 0;
   assign uio_oe  = 0;
-endmodule 
-
+endmodule
