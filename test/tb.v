@@ -63,7 +63,7 @@ module tb ();
     wire OUT6;
     wire OUT7;
 
-tt_um_8bitALU(
+tt_um_8bitALU user_project(
 .clk(clk),
 .rst(rst),
 .IN0(IN0),
