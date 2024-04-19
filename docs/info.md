@@ -30,4 +30,4 @@ You can also include images in this folder and reference them in the markdown. E
 
 
 ## External hardware
-ADALM2000.
+ADALM2000. https://www.analog.com/en/resources/evaluation-hardware-and-software/evaluation-boards-kits/adalm2000.html#eb-overview
