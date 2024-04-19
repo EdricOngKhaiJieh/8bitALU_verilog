@@ -8,13 +8,16 @@ You can also include images in this folder and reference them in the markdown. E
 -->
 
 ## How it works
-<img width="797" alt="image" src="https://github.com/DrHOTpeper/tt06-8bit-ALU/assets/80259537/dca2e6e5-6296-4d4f-9b67-7817a34510b3">
+<img width="860" alt="image" src="https://github.com/EdricOngKhaiJieh/8bitALU_verilog/assets/80259537/0bfb7c71-4778-402a-9428-13c1d3adae90">
+
 
 
 
 ## How to test
-<img width="855" alt="image" src="https://github.com/DrHOTpeper/tt06-8bit-ALU/assets/80259537/4b1be235-ff8c-49b3-baf9-1839c7d9e3d0">
-<img width="855" alt="image" src="https://github.com/DrHOTpeper/tt06-8bit-ALU/assets/80259537/46da4583-3516-45a4-b761-a87474770169">
+<img width="857" alt="image" src="https://github.com/EdricOngKhaiJieh/8bitALU_verilog/assets/80259537/a49bbcc7-b4ae-4c16-9147-324e2b67e3c3">
+<img width="859" alt="image" src="https://github.com/EdricOngKhaiJieh/8bitALU_verilog/assets/80259537/d0db68e4-98ef-4404-b7c8-51eddfa50257">
+
+
 
 
 
@@ -27,4 +30,4 @@ You can also include images in this folder and reference them in the markdown. E
 
 
 ## External hardware
-one pushbuttons, two slide switch, one 1k resistor, and 8 LED lights.
+ADALM2000.
