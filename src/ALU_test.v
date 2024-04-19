@@ -18,7 +18,8 @@ module tt_um_8bitALU (
   output OUT6,
   output OUT7,
   input clk, 
-  input rst 
+  input rst, 
+  input ena
   );
   
 //  reg OUT0;
@@ -49,7 +50,13 @@ module tt_um_8bitALU (
   
  always @(posedge clk) 
   begin
-    
+   if (rst) begin
+    // Reset memory to default values
+    memory1 <= 8'd0;
+    memory2 <= 8'd0;
+    memory3 <= 8'd0;
+  end
+    else if (ena) begin
     if(IN7 == 0 && IN6 == 0 )
         begin
             memory1 = ({IN2 , IN1 , IN0});
@@ -82,7 +89,7 @@ module tt_um_8bitALU (
 //        2'b10: {OUT1, OUT0} = 2'b10; // Opcode 10
 //        2'b11: {OUT1, OUT0} = 2'b11; // Opcode 11
 
-
+    end
 end
 
 //  assign OUT0 = ~rst ? 1'b0 : memory3[0];
