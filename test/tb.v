@@ -43,9 +43,6 @@ module tb ();
 //   );
 
 // endmodule
-
-
-   
     reg clk;
     reg rst; 
     reg IN0;
