@@ -4,14 +4,14 @@
 /* This testbench just instantiates the module and makes some convenient wires
 //    that can be driven / tested by the cocotb test.py.
 // */
-// module tb ();
+module tb ();
 
-//   // Dump the signals to a VCD file. You can view it with gtkwave.
-//   initial begin
-//     $dumpfile("tb.vcd");
-//     $dumpvars(0, tb);
-//     #1;
-//   end
+  // Dump the signals to a VCD file. You can view it with gtkwave.
+  initial begin
+    $dumpfile("tb.vcd");
+    $dumpvars(0, tb);
+    #1;
+  end
 
 //   // Wire up the inputs and outputs:
 //   reg clk;
@@ -44,9 +44,9 @@
 
 // endmodule
 
-module tb ();
+
    
-    reg CLK;
+    reg clk;
     reg rst; 
     reg IN0;
     reg IN1; 
@@ -67,7 +67,7 @@ module tb ();
     wire OUT7;
 
 tt_um_8bitALU  (
-.CLK(CLK),
+.clk(clk),
 .rst(rst),
 .IN0(IN0),
 .IN1(IN1), 
