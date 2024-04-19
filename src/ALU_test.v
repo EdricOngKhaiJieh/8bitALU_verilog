@@ -17,7 +17,7 @@ module tt_um_8bitALU (
   output OUT5,
   output OUT6,
   output OUT7,
-  input CLK, 
+  input clk, 
   input rst 
   );
   
@@ -47,7 +47,7 @@ module tt_um_8bitALU (
   // end
   integer i ; 
   
-  always @(posedge CLK) 
+ always @(posedge clk) 
   begin
     
     if(IN7 == 0 && IN6 == 0 )
