@@ -22,7 +22,7 @@ module tt_um_8bitALU (
   output OUT6,
   output OUT7,
   input clk, 
-  input rst, 
+  input rst_n, 
   input ena
   );
   
@@ -54,7 +54,7 @@ module tt_um_8bitALU (
   
  always @(posedge clk) 
   begin
-   if (rst) begin
+     if (rst_n) begin
     // Reset memory to default values
     memory1 <= 8'd0;
     memory2 <= 8'd0;
@@ -105,14 +105,14 @@ end
 //  assign OUT6 = ~rst ? 1'b0 : IN6;
 //  assign OUT7 = ~rst ? 1'b0 : IN7;
 
-  assign OUT0 = rst ? 1'b0 : memory3[0];
-  assign OUT1 = rst ? 1'b0 : memory3[1];
-  assign OUT2 = rst ? 1'b0 : memory3[2];
-  assign OUT3 = rst ? 1'b0 : memory3[3];
-  assign OUT4 = rst ? 1'b0 : memory3[4];
-  assign OUT5 = rst ? 1'b0 : memory3[5];
-  assign OUT6 = rst ? 1'b0 : IN6;
-  assign OUT7 = rst ? 1'b0 : IN7;
+  assign OUT0 = rst_n ? 1'b0 : memory3[0];
+  assign OUT1 = rst_n ? 1'b0 : memory3[1];
+  assign OUT2 = rst_n ? 1'b0 : memory3[2];
+  assign OUT3 = rst_n ? 1'b0 : memory3[3];
+  assign OUT4 = rst_n ? 1'b0 : memory3[4];
+  assign OUT5 = rst_n ? 1'b0 : memory3[5];
+  assign OUT6 = rst_n ? 1'b0 : IN6;
+  assign OUT7 = rst_n ? 1'b0 : IN7;
 
   assign uo_out  = ui_in + uio_in;  // Example: ou_out is the sum of ui_in and uio_in
   assign uio_out = 0;
