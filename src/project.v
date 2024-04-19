@@ -24,7 +24,7 @@
 // endmodule
 
 
-module project (
+module tt_um_8bitALU (
 
  
   input  IN0,
