@@ -46,7 +46,7 @@
 
 module tb ();
    
-   reg CLK;
+    reg CLK;
     reg rst; 
     reg IN0;
     reg IN1; 
